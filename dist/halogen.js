@@ -140,7 +140,7 @@ module.exports = function (css) {
     }
 
     var index = (extraSheet.cssRules || extraSheet.rules).length;
-    extraSheet.insertRule(css, index);
+    //extraSheet.insertRule(css, index);
 
     return extraSheet;
 }
@@ -238,9 +238,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(1)}), 
-                    React.createElement("div", {style: this.getStyle(2)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(1)}),
+                    React.createElement("div", {style: this.getStyle(2)}),
                     React.createElement("div", {style: this.getStyle(3)})
                 )
             );
@@ -359,9 +359,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle()}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle()},
+                        React.createElement("div", {style: this.getStyle(1)}),
                         React.createElement("div", {style: this.getStyle(2)})
                     )
                 )
@@ -370,7 +370,7 @@ var Loader = React.createClass({displayName: "Loader",
 
         return null;
     },
-    
+
     render: function() {
         return this.renderLoader(this.props.loading);
     }
@@ -476,7 +476,7 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
                     React.createElement("div", {style: this.getStyle()})
                 )
             );
@@ -597,7 +597,7 @@ var Loader = React.createClass({displayName: "Loader",
                     bottom: i%2? 'auto': 0
                 }
             );
-        } 
+        }
 
         return assign(
             this.getAnimationStyle(i),
@@ -616,9 +616,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(0)}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(0)},
+                        React.createElement("div", {style: this.getStyle(1)}),
                         React.createElement("div", {style: this.getStyle(2)})
                     )
                 )
@@ -793,15 +793,15 @@ var Loader = React.createClass({displayName: "Loader",
             };
 
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: style}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
-                        React.createElement("div", {style: this.getStyle(2)}), 
-                        React.createElement("div", {style: this.getStyle(3)}), 
-                        React.createElement("div", {style: this.getStyle(4)}), 
-                        React.createElement("div", {style: this.getStyle(5)}), 
-                        React.createElement("div", {style: this.getStyle(6)}), 
-                        React.createElement("div", {style: this.getStyle(7)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: style},
+                        React.createElement("div", {style: this.getStyle(1)}),
+                        React.createElement("div", {style: this.getStyle(2)}),
+                        React.createElement("div", {style: this.getStyle(3)}),
+                        React.createElement("div", {style: this.getStyle(4)}),
+                        React.createElement("div", {style: this.getStyle(5)}),
+                        React.createElement("div", {style: this.getStyle(6)}),
+                        React.createElement("div", {style: this.getStyle(7)}),
                         React.createElement("div", {style: this.getStyle(8)})
                     )
                 )
@@ -934,16 +934,16 @@ var Loader = React.createClass({displayName: "Loader",
             };
 
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: style}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
-                        React.createElement("div", {style: this.getStyle(2)}), 
-                        React.createElement("div", {style: this.getStyle(3)}), 
-                        React.createElement("div", {style: this.getStyle(4)}), 
-                        React.createElement("div", {style: this.getStyle(5)}), 
-                        React.createElement("div", {style: this.getStyle(6)}), 
-                        React.createElement("div", {style: this.getStyle(7)}), 
-                        React.createElement("div", {style: this.getStyle(8)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: style},
+                        React.createElement("div", {style: this.getStyle(1)}),
+                        React.createElement("div", {style: this.getStyle(2)}),
+                        React.createElement("div", {style: this.getStyle(3)}),
+                        React.createElement("div", {style: this.getStyle(4)}),
+                        React.createElement("div", {style: this.getStyle(5)}),
+                        React.createElement("div", {style: this.getStyle(6)}),
+                        React.createElement("div", {style: this.getStyle(7)}),
+                        React.createElement("div", {style: this.getStyle(8)}),
                         React.createElement("div", {style: this.getStyle(9)})
                     )
                 )
@@ -1048,7 +1048,7 @@ var Loader = React.createClass({displayName: "Loader",
                     top: size/2 - moonSize/2
                 }
             );
-        } 
+        }
         else if (i == 2) {
             return assign(
                 this.getBallStyle(size),
@@ -1057,7 +1057,7 @@ var Loader = React.createClass({displayName: "Loader",
                     opacity: 0.1
                 }
             );
-        } 
+        }
         else {
             return assign(
                 this.getAnimationStyle(i),
@@ -1075,9 +1075,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(0)}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(0)},
+                        React.createElement("div", {style: this.getStyle(1)}),
                         React.createElement("div", {style: this.getStyle(2)})
                     )
                 )
@@ -1190,7 +1190,7 @@ var Loader = React.createClass({displayName: "Loader",
                 borderRadius: this.props.size
             };
         }
-        
+
         return assign(
             this.getBallStyle(i),
             this.getAnimationStyle(i),
@@ -1217,12 +1217,12 @@ var Loader = React.createClass({displayName: "Loader",
             };
 
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: style}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
-                        React.createElement("div", {style: this.getStyle(2)}), 
-                        React.createElement("div", {style: this.getStyle(3)}), 
-                        React.createElement("div", {style: this.getStyle(4)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: style},
+                        React.createElement("div", {style: this.getStyle(1)}),
+                        React.createElement("div", {style: this.getStyle(2)}),
+                        React.createElement("div", {style: this.getStyle(3)}),
+                        React.createElement("div", {style: this.getStyle(4)}),
                         React.createElement("div", {style: this.getStyle(5)})
                     )
                 )
@@ -1340,9 +1340,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(1)}), 
-                    React.createElement("div", {style: this.getStyle(2)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(1)}),
+                    React.createElement("div", {style: this.getStyle(2)}),
                     React.createElement("div", {style: this.getStyle(3)})
                 )
             );
@@ -1350,7 +1350,7 @@ var Loader = React.createClass({displayName: "Loader",
 
         return null;
     },
-    
+
     render: function() {
         return this.renderLoader(this.props.loading);
     }
@@ -1485,9 +1485,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(0)}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(0)},
+                        React.createElement("div", {style: this.getStyle(1)}),
                         React.createElement("div", {style: this.getStyle(2)})
                     )
                 )
@@ -1639,11 +1639,11 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(1)}), 
-                    React.createElement("div", {style: this.getStyle(2)}), 
-                    React.createElement("div", {style: this.getStyle(3)}), 
-                    React.createElement("div", {style: this.getStyle(4)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(1)}),
+                    React.createElement("div", {style: this.getStyle(2)}),
+                    React.createElement("div", {style: this.getStyle(3)}),
+                    React.createElement("div", {style: this.getStyle(4)}),
                     React.createElement("div", {style: this.getStyle(5)})
                 )
             );
@@ -1750,7 +1750,7 @@ var Loader = React.createClass({displayName: "Loader",
                     top: 0,
                     left: i%2 ? -28 : 25
                 }
-            ); 
+            );
         }
 
         return assign(
@@ -1770,9 +1770,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle()}, 
-                        React.createElement("div", {style: this.getStyle(1)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle()},
+                        React.createElement("div", {style: this.getStyle(1)}),
                         React.createElement("div", {style: this.getStyle(2)})
                     )
                 )
@@ -1891,11 +1891,11 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(1)}), 
-                    React.createElement("div", {style: this.getStyle(2)}), 
-                    React.createElement("div", {style: this.getStyle(3)}), 
-                    React.createElement("div", {style: this.getStyle(4)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(1)}),
+                    React.createElement("div", {style: this.getStyle(2)}),
+                    React.createElement("div", {style: this.getStyle(3)}),
+                    React.createElement("div", {style: this.getStyle(4)}),
                     React.createElement("div", {style: this.getStyle(5)})
                 )
             );
@@ -2010,7 +2010,7 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
                     React.createElement("div", {style: this.getStyle()})
                 )
             );
@@ -2126,7 +2126,7 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
                     React.createElement("div", {style: this.getStyle()})
                 )
             );
@@ -2240,9 +2240,9 @@ var Loader = React.createClass({displayName: "Loader",
     renderLoader: function(loading) {
         if (loading) {
             return (
-                React.createElement("div", {id: this.props.id, className: this.props.className}, 
-                    React.createElement("div", {style: this.getStyle(1)}), 
-                    React.createElement("div", {style: this.getStyle(2)}), 
+                React.createElement("div", {id: this.props.id, className: this.props.className},
+                    React.createElement("div", {style: this.getStyle(1)}),
+                    React.createElement("div", {style: this.getStyle(2)}),
                     React.createElement("div", {style: this.getStyle(3)})
                 )
             );
